@@ -48,8 +48,8 @@ async def shuffleIvan(message: discord.Message):
             try:
                 await ivanUser.move_to(woIvanChannel)
                 await ivanUser.move_to(withIvanChannel)
-            except err:
-                print(err)
+            except Exception as error:
+                print(error)
 
 @client.event
 async def on_ready():    
